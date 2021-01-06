@@ -1,0 +1,190 @@
+//Header Styles
+.header{
+    background-color: #fff;
+    padding: 10px 0 10px;
+    // Header Icon
+    .head-icon{
+        cursor: pointer;
+        margin-right: 20px;
+        color: #666464;
+        background-color: #f8f7f7;
+        padding: 10px;
+        border-radius: 5px;
+        &:hover{
+            color:$mainRed;
+        }
+        .fa-exchange{
+            border:0 5px 5px 0;
+        }
+    }
+    .message{
+        display: none;
+        position: absolute;
+        top: 45px;
+        background-color: #f8f7f7;
+        padding: 5px;
+        color: #706464;
+        border-radius:5px;
+        &.exchange{
+            left:170px;
+        }
+        &.expand{
+            left:240px;
+        }
+    }
+    //Notification DropDown Menu
+    .dropdown.noti-drop{
+        display:inline-block;
+        ///subMenu 
+        .dropdown-menu{
+            min-width: 363px;
+            padding: 0px;
+            border: none;
+            border-radius: 6px;
+            //Head Notification
+            .noti-head{
+                background-color: $mainRed;
+                color:#fff;
+                padding:10px;
+                span{
+                    float:right;
+                }
+            }
+            //Content Notification
+            .noti-content{
+                ul{
+                    margin-top: 15px;
+                    margin-bottom:5px;
+                    li{
+                        padding:10px 20px;
+                        border-bottom:1px solid #eee;
+                        i{
+                            margin-right: 10px;
+                            padding: 10px;
+                            color: #f8f7f7;
+                            font-size: 17px;
+                            &.envelope{
+                                background-color: $mainRed;
+                            }
+                            &.money{
+                                background-color: $mainPurple;
+                            }
+                            &.like{
+                                background-color: $mainBlue;
+                            }
+                        }
+                        span{
+                            color: #6c6a6a;
+                        }
+                        &:hover{
+                            background-color: #f8f7f7;
+                        }
+                    }
+                }
+                
+            }
+            //Footer Notification
+            .noti-foot{
+                display:block;
+                padding:10px;
+                a{
+                    color: #6c6a6a;
+                    font-size: 0.9rem;
+                    &:hover{
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+    }
+    //User DropMenu 
+    .user-container{
+        cursor: pointer;
+        float:right;
+        margin-right:15px;
+        .username{
+            .avatar{
+                width:32px;
+                height:32px;
+                margin-right: 10px;
+            }
+            .user{
+                font-weight: 600;
+                color: #666464;
+            }
+        }
+        //SubMenu 
+        .dropdown-menu{
+            padding:10px 20px;
+            min-width: 350px;
+            .user-info{
+                border-bottom:1px solid #eee;
+                h3{
+                    color:$mainRed;
+                    font-size: 1.3rem;
+                }
+                p{
+                    color:#666464;
+                    padding:0;
+                }
+            }
+            //Messages
+            .activities{
+                margin: 15px auto;
+                li{
+                    padding: 15px 5px;
+                    display:flex;
+                    border-bottom:1px solid #eee;
+                    i{
+                        margin-right: 10px;
+                        padding: 10px;
+                        color: #f8f7f7;
+                        font-size: 17px;
+                        line-height: 1.4;
+                        &.comment{
+                            background-color: $mainRed;
+                        }
+                        &.post{
+                            background-color: $mainPurple;
+                        }
+                        &.chart{
+                            background-color: $mainBlue;
+                        }
+                    }
+                    span{
+                        color:#666464;
+                    }
+                    &:hover{
+                        background-color: #f8f7f7;
+                    }
+                }
+            }
+            //Control
+            .control{
+                .user-control{
+                    background-color: #fff;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 1px solid #eee;
+                    i{
+                        &.settingicon{
+                            color:$mainPurple;
+                        }
+                        &.profile{
+                            color:$mainBlue;
+                        }
+                        &.logout{
+                            color:$mainRed;
+                        }
+                    }
+                    span{
+                        font-weight: 500;
+                        font-size: 0.75rem;
+                        display:block;
+                    }
+                }
+            }
+
+        }
+    }
+}

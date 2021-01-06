@@ -1,0 +1,18 @@
+//-Page Title
+- var pageTitle ="DashBoard";
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        title #{pageTitle}
+        include pug/layout/styles
+    body
+        .page.home-page
+            include pug/component/setting
+            include pug/layout/sidebar
+            .page-content 
+                include pug/layout/header
+                h1 #{pageTitle}
+                p.lead THis is Description Text 
+        include pug/layout/scripts

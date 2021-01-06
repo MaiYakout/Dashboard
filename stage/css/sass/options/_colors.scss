@@ -1,0 +1,37 @@
+//Color Theme In Setting Control
+$themes:(
+    green-theme:(
+        color:$mainGreen
+    ),
+    red-theme:(
+        color:$mainRed
+    ),
+    blue-theme:(
+        color:$mainBlue
+    ),
+    purple-theme:(
+        color:$mainPurple
+    )
+);
+@each $theme,$map in $themes{
+    
+    .#{$theme}{
+        $colorname:map-get($map,color);
+        .header .head-icon:hover{
+            color:$colorname;
+        }
+        .header .dropdown.noti-drop .dropdown-menu .noti-head{
+            background-color: $colorname;
+        }
+        .page .page-content h1{
+            color:$colorname;
+        }
+        .header .user-container .dropdown-menu .user-info h3{
+            color:$colorname;
+        }
+        .sidebar{
+            background-color: $colorname;
+        }
+       
+    }  
+}

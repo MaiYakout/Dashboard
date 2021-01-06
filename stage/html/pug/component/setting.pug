@@ -1,0 +1,22 @@
+//Setting Control 
+.setting.text-center 
+    .toggle-setting
+        //Setting Icon 
+        i.fa.fa-gear.fa-lg
+    //Option Box Control
+    //Colors
+    .option-box.color-box
+        h4 Colors Option
+        - var themes = ["green-theme","red-theme","blue-theme","purple-theme"]
+        ul.list-unstyled
+            each theme in themes
+                li(data-theme=theme)
+    //Fonts        
+    .option-box.font-box
+        h4 Fonts Option
+        - var fonts = ["Lora","Oswald","Roboto","Teko"]
+        select.form-control
+            each font in fonts
+                option(value=font)=font + ' Font'
+    .option-box
+        h4 sidebar Option

@@ -1,0 +1,103 @@
+.sidebar{
+    background-color: $mainRed;
+    width: 200px;
+    height: 100vh;
+    padding:20px 10px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    //Toggle Sidebar
+    &.no-sidebar{
+        left:-200px;
+    }
+    //Logo
+    .logo{
+        font-weight: 600;
+        font-size:20px;
+        i{
+            margin-right:10px;
+        }
+    }
+    //SideBar Menu
+    .main{
+        li{
+            a{
+                color:#f6f5f5;
+                display: block;
+                padding: 10px 15px;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        //Main Link In Menu
+        > li {
+            > a{
+                color:#fff;
+                position:relative;
+                transition:0.3s;
+                font-weight: 600;
+                &:hover{
+                    padding-left:20px;
+                }
+                //Circle Before Main Links
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                    transform:translateY(-50%)
+                }
+                &.active{
+                    &:before{
+                        border-color:#242424;
+                    }
+                }
+                .fa-angle-right{
+                    position: absolute;
+                    top: 14px;
+                    right: 0;
+                    &.down{
+                        transform:rotate(90deg);
+                    }
+                }
+            }
+        }
+        
+    }
+    //SubMenu 
+    .child{
+        display:none;
+        li{          
+            a{
+                position: relative;
+                transition:0.3s;
+                //Line Before SubMenu Links
+                &:before{
+                    content:'';
+                    position: absolute;
+                    top:0;
+                    left:3px;
+                    width:3px;
+                    height:100%;
+                    background-color: #242424;
+                }
+                &:hover:before{
+                    content:'';
+                    position: absolute;
+                    top:0;
+                    left:3px;
+                    width:3px;
+                    height:100%;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}

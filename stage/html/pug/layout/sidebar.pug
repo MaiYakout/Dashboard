@@ -1,0 +1,27 @@
+//SideBar
+.sidebar 
+    //Logo
+    .logo.text-center 
+        i.fa.fa-cube.fa-lg
+        | DashBoard
+    hr
+    //SideBar Menu
+    ul.list-unstyled.main
+        li: a(href="index.html" class= pageTitle === 'DashBoard' ? 'active' : '') DashBoard
+        li
+            a.submenu(href="#") 
+                | Forms
+                i.fa.fa-angle-right
+            ul.list-unstyled.child
+                li: a(href="#") Input
+                li: a(href="#") Radio
+                li: a(href="#") CheckBox
+                li: a(href="#") TextArea
+        li
+            a.submenu(href="#") 
+                | Misc
+                i.fa.fa-angle-right
+            ul.list-unstyled.child
+                li: a(href="#") Loading
+                li: a(href="#") BreadCrumbs
+        li: a(href="charts.html" class= pageTitle === 'Charts' ? 'active' : '') Charts

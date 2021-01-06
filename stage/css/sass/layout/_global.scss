@@ -1,0 +1,55 @@
+//Add fonts
+@font-face {
+    font-family:Teko;
+    src: url(../fonts/Teko-Medium.ttf);
+}
+@font-face {
+    font-family:Lora;
+    src: url(../fonts/Lora-Bold.ttf);
+}
+@font-face {
+    font-family:Oswald;
+    src: url(../fonts/Oswald-Bold.ttf);
+}
+@font-face {
+    font-family:Roboto;
+    src: url(../fonts/Roboto-Medium.ttf);
+  }
+  //add fonts to body
+body{
+    overflow-x:hidden ;
+    font-family: Lora, sans-serif;
+    &.Lora{
+        font-family:Lora, sans-serif ;
+    }
+    &.Oswald{
+        font-family:Oswald, sans-serif ;
+    }
+    &.Roboto{
+        font-family:Roboto, sans-serif ;
+    }
+    &.Teko{
+        font-family:Teko, sans-serif ;
+    }
+}
+//general page style
+.page{
+    .page-content{
+        width: calc(100% - 200px);
+        height:100vh;
+        background-color: #ddd;
+        float: right;
+        transition: 0.3s ease-in-out;
+        &.no-sidebar{
+            width:100%;
+        }
+        h1{
+            padding:10px;
+            margin-top: 10px;
+            color:$mainRed;
+        }
+        p{
+            padding:10px;
+        }
+    }
+}

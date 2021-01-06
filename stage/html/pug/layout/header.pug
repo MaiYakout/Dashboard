@@ -1,0 +1,75 @@
+//Header
+.header
+    //Toggle SideBar Icon
+    i.fa.fa-exchange.fa-lg.toggle-sidebar.head-icon
+    .message.exchange Hide SideBar
+        //Expand Icon 
+    i.fa.fa-expand.fa-lg.toggle-expand.head-icon
+    .message.expand FullScreen
+    //Notificayion DropDown Menu
+    .dropdown.noti-drop
+        i.fa.fa-bell.fa-lg.head-icon#notification(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        .dropdown-menu(aria-labelledby='notification')
+            .noti-head 
+                | Notification
+                span 50
+            .noti-content
+                ul.list-unstyled
+                    li
+                        i.fa.fa-envelope.rounded-circle.envelope
+                        span You have got eMail from Bla Bla.
+                    li
+                        i.fa.fa-money.rounded-circle.money
+                        span You have got money from Bla Bla.
+                    li
+                        i.fa.fa-thumbs-o-up.rounded-circle.like
+                        span You have got Like from Bla .
+                    li
+                        i.fa.fa-envelope.rounded-circle.envelope
+                        span You have got eMail.
+            .noti-foot.text-center
+                a(href="#") View More Notification
+    //User DropDown Menu
+    .dropdown.user-container
+        .username#user(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+            img.avatar.rounded-circle(src="img/image1.png",alt="")
+            span.user Mai Yakout
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='user')
+            //Info
+            .user-info
+                .row
+                    .col
+                        h3 Mai Yakout
+                    .col 
+                        p Admin
+            //Messages
+            ul.list-unstyled.activities
+                li
+                    i.fa.fa-comment-o.rounded-circle.comment 
+                    span Added Comments on post "How to make this"
+                li
+                    i.fa.fa-pencil.rounded-circle.post
+                    span Created Post in category "hello"
+                li
+                    i.fa.fa-line-chart.rounded-circle.chart
+                    span Created Chart on Post "hello everyday everybody"
+                li
+                    i.fa.fa-comment-o.rounded-circle.comment
+                    span Added Comments on post "How to make this"
+                li
+                    i.fa.fa-pencil.rounded-circle.post
+                    span Created Post in category "hello"
+            //Control 
+            .row.control
+                .col 
+                    .user-control.text-center
+                        i.fa.fa-gear.fa-lg.fa-fw.settingicon 
+                        span Setting
+                .col
+                    .user-control.text-center 
+                        i.fa.fa-user.fa-lg.fa-fw.profile 
+                        span My Profile
+                .col
+                    .user-control.text-center 
+                        i.fa.fa-power-off.fa-lg.fa-fw.logout 
+                        span Logout
